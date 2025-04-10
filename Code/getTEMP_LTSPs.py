@@ -111,7 +111,6 @@ for s in sites:
     # save in new dataset
     data_QCd[s + '_TEMP'] = filtered_ds
     
-
 # %% save data sets as a pickle
 
 # Serialize the data

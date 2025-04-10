@@ -156,9 +156,6 @@ for s in sites:
 
 # %% get nearest SST data for each mooring profile
 
-sites = ['NRSNSI','CH050', 'CH070', 'CH100', 'SYD100', 'SYD140', 'PH100', 'BMP070', 'BMP090', 'BMP120', 'NRSMAI', 'NRSKAI', 'NRSROT', 'NRSYON']
-
-
 for s in sites:
     
     T = []; t = []; prof = []; D_prof = []

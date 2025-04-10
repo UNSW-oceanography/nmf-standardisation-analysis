@@ -14,18 +14,22 @@ os.chdir(repo_path)
 
 # %% Import packages
 
-import xarray as xr
 import os
-import requests
-import re
 import numpy as np
 import Code.util.CTD_AGG.aggregated_profiles as agg
 import Code.util.PickleStuff as ps
+import yaml
+
+# %% Site information
+
+with open(repo_path + "sites.yaml", "r") as f:
+    s = yaml.safe_load(f)
+
+sites = list(s.keys())
+
+del s
 
 # %% Get data
-
-sites = ['NRSNSI', 'CH050', 'CH070', 'CH100', 'SYD100', 'SYD140', 'PH100', 'BMP070', 'BMP090', 'BMP120', 'NRSMAI', 'NRSKAI', 'NRSROT', 'NRSYON', 'WATR50','VBM100']
-
 CTDdata = {}
 for s in sites:
 
