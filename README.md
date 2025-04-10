@@ -1,11 +1,13 @@
 # Vertical Mooring Configuration Analysis
 ## IMOS National Mooring Facility
 
-**Contact:** Michael Hemming, michael.hemming@utas.edu.au
-
 This repository contains code to identify depths in the water column where sensors could potentially be deployed in future configurations. The code compares CTD profiles with interpolated profiles using mooring measurements at discrete depths, and estimates the difference between them. 
 
 The code can be applied to data collected at any of the NMF mooring sites, but the methodology is heavily-dependent on the number of CTD profiles available at a site. 
+
+Work for the Integrated Marine Observing System (IMOS) started by Michael Hemming at the University of New South Wales, with additional contributions while at the Australian Ocean Data Network.
+
+Contact: Michael Hemming, michael.hemming@utas.edu.au
 
 ## Repository Structure
 
